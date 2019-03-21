@@ -71,3 +71,70 @@ body {
 	
 }
 //Main looking
+
+
+
+//Footer
+.footer__buttom {
+	width: 45px;
+	height: 45px;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+	background-color: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 22.5px;
+	transform: translateY(-22px);
+	
+}
+.footer__wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #304268;
+	height: 465px;
+
+}
+
+.footer__menu {
+	text-decoration: none;
+	width: 73px;
+	height: 150px;
+	font-family: Roboto;
+	font-size: 16px;
+	line-height: 1.88;
+	text-align: center;
+	color: #ffffff;
+	list-style: none;
+	margin-bottom: 30px;
+}
+.footer__menu a {
+	text-decoration: none;
+	color: #ffffff;
+}
+.footer__menu__item {
+	list-style: none;
+	text-decoration: none;
+	width: 73px;
+	padding: 0;
+	margin: 0;
+
+}
+.footer__mnenu__item +.footer__menu__item {
+	width: 147px;
+}
+.copyright {
+	font-family: Roboto;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 2.14;
+	letter-spacing: normal;
+	text-align: center;
+	color: #ffffff
+}
+.heart {
+	color:#f26002;
+}
