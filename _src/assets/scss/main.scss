@@ -1,6 +1,13 @@
-@import 'core/settings';
-
+//body 
 body {
-	background: url('../images/logo-adalab-80px.png') center center no-repeat $color-white;
-	height: 100vh;
+	margin: 0;
+}
+
+//Hero
+.hero__image {
+	background-image: url(../images/cover.jpg) ;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
