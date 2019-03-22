@@ -69,6 +69,71 @@ body {
 	align-items: center;
 }
 //Main looking
+.looking__container {
+	height: 376px;
+	width: 290px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding: 15px;
+}
+.looking__subtitle {
+	height: 30px;
+	font-family: Roboto;
+	font-size: 14px;
+	line-height: 2.14;
+	color: #8ccbea;
+	margin-top: 15px;
+}
+.looking__title .title {
+	width: 290px;
+	height: 60px;
+	font-family: RobotoSlab;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 1.25;
+	color: #000000;
+	margin: 0;
+}
+.looking__text .text {
+	width: 290px;
+	height: 120px;
+	font-family: Roboto;
+	font-size: 18px;
+	line-height: 1.67;
+	color: #4a4a4a;
+}
+
+.looking__buttom {
+	width: 76px;
+	height: 45px;
+	border-radius: 22.5px;
+	border: solid 2px #f26002;
+	margin-bottom: 45px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	cursor: pointer;
+	
+}
+.looking__buttom .buttom {
+	
+	color: #f26002;
+	text-align: center;
+	font-family: Roboto;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 2.25;
+	box-shadow: 0px 2px 10px rgba(black, .5);
+    &:hover {
+        background-color: #eb9347;
+    }
+	
+
+	
+	
+}
 
 
 
@@ -78,6 +143,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	padding: 15px;
 }
 .reasons__container p {
 	width: 180px;
@@ -100,7 +166,7 @@ body {
 	text-align: center;
 	color: #000000;
 }
-.reasons__title {
+.reasons__title .title {
 	//width: 290px;
 	//height: 30px;
 	font-family: RobotoSlab;
@@ -109,7 +175,7 @@ body {
 	line-height: 1.25;
 	text-align: center;
 	color: #000000;
-	//box-sizing: border-box;
+	
 }
 
 .reasons__buttom {
