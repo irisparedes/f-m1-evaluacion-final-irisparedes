@@ -30,7 +30,7 @@ body {
   	background-position: top;
 	background-size: cover;
 }
-.hero__title {
+.hero__title .title {
 	text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
 	font-family: RobotoSlab;
 	font-size: 42px;
@@ -41,9 +41,9 @@ body {
 	margin: 0;
 	text-align: center;
 	text-transform: uppercase;
-	padding: 284px 15px 174px 15px;
+	margin: 284px 15px 0 15px;
 }
-.hero__text {
+.hero__text .text {
 	font-family: Roboto;
 	font-size: 16px;
 	height: 21px;
@@ -67,6 +67,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin: 94px 134px 53px 136px;
 }
 //Main looking
 .looking__container {
@@ -217,7 +218,9 @@ body {
 	align-items: center;
 	border-radius: 22.5px;
 	transform: translateY(-22px);
+	cursor: pointer;
 }
+
 .footer__wrapper {
 	display: flex;
 	flex-direction: column;
