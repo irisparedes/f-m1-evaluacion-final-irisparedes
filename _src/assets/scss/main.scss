@@ -1,3 +1,4 @@
+@import	"core/variables";
 //body 
 body {
 	margin: 0;
@@ -71,13 +72,18 @@ body {
 }
 //Main looking
 .looking__container {
-	height: 376px;
-	width: 290px;
+	//height: 376px;
+	//width: 290px;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: flex-start;
 	padding: 15px;
+	@media all and (min-width: 768px){
+		
+		
+
+	}
 }
 .looking__subtitle {
 	height: 30px;
@@ -103,7 +109,7 @@ body {
 	font-family: Roboto;
 	font-size: 18px;
 	line-height: 1.67;
-	color: #4a4a4a;
+	color: $colorText;
 }
 
 .looking__buttom {
@@ -154,11 +160,7 @@ body {
 	grid-template-rows: 20% 60% 20%;
 	grid-template-areas: "reasons__title" "reasons__subtitle1" "reasons__subtitle2" "reasons__subtitle3" "reasons__buttom" "reasons__buttom";
 	
-.reasons__container {
-	//display: flex;
-	//justify-content: center;
-	//align-items: center;
-}
+
 .reasons__title {
 	grid-column: 1/4;
 }
