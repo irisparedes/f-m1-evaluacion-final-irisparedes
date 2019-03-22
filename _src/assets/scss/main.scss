@@ -67,8 +67,6 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	
-	
 }
 //Main looking
 
@@ -85,7 +83,6 @@ body {
 	align-items: center;
 	border-radius: 22.5px;
 	transform: translateY(-22px);
-	
 }
 .footer__wrapper {
 	display: flex;
@@ -119,7 +116,6 @@ body {
 	width: 73px;
 	padding: 0;
 	margin: 0;
-
 }
 .footer__mnenu__item +.footer__menu__item {
 	width: 147px;
@@ -133,7 +129,14 @@ body {
 	line-height: 2.14;
 	letter-spacing: normal;
 	text-align: center;
-	color: #ffffff
+	color: #ffffff;
+	margin-bottom: 30px;
+}
+.footer__copyright {
+	margin: 0;
+}
+.copyright__text {
+	margin: 0;
 }
 .heart {
 	color:#f26002;
