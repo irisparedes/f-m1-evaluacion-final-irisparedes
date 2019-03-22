@@ -146,6 +146,31 @@ body {
 	align-items: center;
 	padding: 15px;
 }
+@media all and (min-width: 768px) {
+	.reasons__container {
+	display: 100vh;
+	display: grid;
+	grid-template-columns: 3fr 3fr 3fr;
+	grid-template-rows: 20% 60% 20%;
+	grid-template-areas: "reasons__title" "reasons__subtitle1" "reasons__subtitle2" "reasons__subtitle3" "reasons__buttom" "reasons__buttom";
+	
+.reasons__container {
+	//display: flex;
+	//justify-content: center;
+	//align-items: center;
+}
+.reasons__title {
+	grid-column: 1/4;
+}
+
+.reasons__buttom {
+	grid-column: 1/4;
+	margin: auto;
+	
+}
+}
+}
+
 .reasons__container p {
 	width: 180px;
 	height: 63px;
@@ -176,7 +201,6 @@ body {
 	line-height: 1.25;
 	text-align: center;
 	color: #000000;
-	
 }
 
 .reasons__buttom {
@@ -205,6 +229,7 @@ body {
         background-color: #eb9347;
     }
 }
+
 
 
 //Footer
