@@ -26,7 +26,8 @@ body {
 //Hero
 .hero {
 	background-image: url(../images/cover.jpg) ;
-    min-height: 100vh;
+		//min-height: 100vh;
+		height: 568px;
     background-repeat: no-repeat;
   	background-position: top;
 	background-size: cover;
@@ -42,7 +43,7 @@ body {
 	margin: 0;
 	text-align: center;
 	text-transform: uppercase;
-	margin: 284px 15px 0 15px;
+	margin: 284px 15px 10px 15px;
 }
 .hero__text .text {
 	font-family: Roboto;
@@ -50,7 +51,7 @@ body {
 	height: 21px;
 	text-align: center;
 	color: #ffffff;
-	padding-top: 10px;
+	//padding-top: 10px;
 	margin: 0;
 }
 
@@ -68,7 +69,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 94px 134px 53px 136px;
+	margin: 45px 137px 53px 138px;
 }
 //Main looking
 .looking__container {
