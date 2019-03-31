@@ -328,85 +328,99 @@ body {
 	border-radius: 50%;
 	transform: translateY(-22px);
 	cursor: pointer;
-	//margin: 0 137px -28px 138px;
 }
 .footer__button a {
 	height: 24px;
 }
 
 .footer__wrapper {
+	width: 100vw;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	align-content: center;
+	box-sizing: border-box;
 	background-color: #304268;
-	height: 465px;
-	text-align: center;
-
+	@media all and (min-width: 768px) {
+		padding: 0 39px;
+	}
+	@media all and (min-width: 1200px) {
+		padding: 0 370px;
+	}
 }
+
 
 .footer__menu {
-	text-decoration: none;
-	width: 73px;
-	height: 150px;
-	font-family: Roboto;
-	font-size: 16px;
-	line-height: 1.88;
-	text-align: center;
-	color: #ffffff;
-	list-style: none;
+	padding: 0;
 	margin-bottom: 30px;
-	margin-top: 23px;
-	text-transform: uppercase;
+	@media all and (min-width:768px) {
+		margin-bottom: 45px;
+	}
 }
-.footer__menu__social {
+.menu {
 	text-decoration: none;
-	width: 147px;
-	height: 90px;
 	font-family: Roboto;
 	font-size: 16px;
 	line-height: 1.88;
 	text-align: center;
 	color: #ffffff;
 	list-style: none;
-	margin-bottom: 30px;
 	text-transform: uppercase;
+	@media all and (min-width: 768px) {
+		grid-column: 2/3;
+	}
+}
+.social {
+	font-family: Roboto;
+	font-size: 16px;
+	line-height: 1.88;
+	text-align: center;
+	color: #ffffff;
+	list-style: none;
+	text-transform: uppercase;
+	@media all and (min-width: 768px) {
+		grid-column: 3/4;
+	}
 }
 .footer__menu a {
 	text-decoration: none;
 	color: #ffffff;
 }
 
-.footer__menu__social a {
-	text-decoration: none;
-	color: #ffffff;
-}
-.footer__menu__item {
-	list-style: none;
-	text-decoration: none;
-	//width: 73px;
-	padding: 0;
-	margin: 0;
-}
-
-.copyright {
+.footer__copyright {
 	font-family: Roboto;
 	font-size: 14px;
-	font-weight: normal;
-	font-style: normal;
-	font-stretch: normal;
 	line-height: 2.14;
-	letter-spacing: normal;
 	text-align: center;
 	color: #ffffff;
-	margin-bottom: 45px;
-}
-.footer__copyright {
-	margin: 0;
+	margin: 30px 0 0 0;
+	@media all and (min-width:768px) {
+		margin: 0;
+	}
 }
 .copyright__text {
-	margin: 0;
+	font-family: Roboto;
+	font-size: 14px;
+	line-height: 2.14;
+	text-align: center;
+	color: #ffffff;
+	margin: 0 0 45px 0;
 }
 .heart {
 	color:#f26002;
+}
+
+@media all and (min-width: 768px) {
+	.footer__nav {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr;
+		grid-gap: 30px;
+	}
+	.copyright {
+		grid-column: 1/2;
+		grid-row: 1/1;
+		margin-top: 16px;
+	}
 }
