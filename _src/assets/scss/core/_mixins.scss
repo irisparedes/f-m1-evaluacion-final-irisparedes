@@ -1,0 +1,19 @@
+@mixin subtitle-style() {
+    font-family: Roboto;
+	font-size: 14px;
+	line-height: 2.14;
+}
+
+@mixin title-style() {
+    font-family: RobotoSlab;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.25;
+    color: #000000;
+}
+
+@mixin text() {
+    font-size: 18px;
+	line-height: 1.67;
+}
+
