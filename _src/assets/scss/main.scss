@@ -8,7 +8,7 @@ body {
 
 //header
 .header {
-	background-color: #0271bc;
+	background-color: $colorHeader;
 	width: 44px;
 	height: 44px;
 	position: fixed;
@@ -32,7 +32,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 	background-size: cover;
-	color: #ffffff;
+	color: $colorTextHeroFooter;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
@@ -45,7 +45,7 @@ body {
 	font-weight: bold;
 	line-height: 1.31;
 	text-align: center;
-	color: #ffffff;
+	color: $colorTextHeroFooter;
 	margin-bottom: 10px;
 	text-align: center;
 	text-transform: uppercase;
@@ -71,7 +71,7 @@ body {
 	font-size: 16px;
 	text-align: center;
 	margin-bottom: 45px;
-	color: #ffffff;
+	color: $colorTextHeroFooter;
 	//padding-top: 10px;
 	@media all and (min-width: 768px) {
 		font-size: 24px;
@@ -91,7 +91,7 @@ body {
 	width: 45px;
 	height: 45px;
 	border-radius: 22.5px;
-	background: #ffffff;
+	background: $colorTextHeroFooter;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -119,13 +119,13 @@ body {
 
 .looking {
 	font-family: Roboto;
-	color: #8ccbea;
+	color: $colorSubtitle;
 }
 
 .looking__subtitle {
 	//height: 30px;
 	@include subtitle-style();
-	color: #8ccbea;
+	color: $colorSubtitle;
 	margin-top: 30px;
 	@media all and (min-width: 1200px){
 		font-size: 14px;
@@ -166,13 +166,13 @@ body {
 	width: 76px;
 	height: 45px;
 	border-radius: 22.5px;
-	border: solid 2px #f26002;
+	border: solid 2px $colorButton;
 	margin-bottom: 45px;
 	text-align: center;
 	display: flex;
 	justify-content: center;
 	cursor: pointer;
-	color: #f26002;
+	color: $colorButton;
 	text-decoration: none;
 	text-align: center;
 	font-family: Roboto;
@@ -181,7 +181,7 @@ body {
 	line-height: 2.25;
 	transition: background-color linear .7s, box-shadow ease .7s;
 	&:hover {
-		background-color: #304268;
+		background-color: $colorFooter;
 		box-shadow: 0px 5px 10px rgba(black, .5);
     }	
 }
@@ -195,7 +195,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	padding: 0 15px;
-	background: #eff9ff;
+	background: $colorBackground;
 	@media all and (min-width: 768px) {
 		padding: 0 39px;
 	}
@@ -266,7 +266,7 @@ body {
 	text-align: center;
 	font-family: Roboto;
 	text-align: center;
-	color:#000000;
+	color: $colorTitle;
 	margin: 0;
 	@media all and (min-width: 768px) {
 		font-size: 20px;
@@ -281,7 +281,7 @@ body {
 	font-family: RobotoSlab;
 	font-weight: bold;
 	text-align: center;
-	color: #000000;
+	color: $colorTitle;
 	margin-top: 45px;
 	margin-bottom: 0;
 	@media all and (min-width: 768px) {
@@ -314,14 +314,14 @@ body {
 	height: 45px;
 	width: 184px;
 	border-radius: 22.5px;
-	background-color: #f26002;
+	background-color: $colorButton;
 	margin-bottom: 60px;
 	margin-top: 45px;
 	text-align: center;
 	display: flex;
 	justify-content: center;
 	cursor: pointer;
-	color: #ffffff;
+	color: $colorTextHeroFooter;
 	font-family: Roboto;
 	text-decoration: none;
 	font-size: 20px;
@@ -331,7 +331,7 @@ body {
 
 	transition: background-color linear .7s, box-shadow ease .7s;
 	&:hover {
-		background-color: #304268;
+		background-color: $colorFooter;
 		box-shadow: 0px 5px 10px rgba(black, .5);
 		}
 		@media all and (min-width: 768px) {
@@ -379,7 +379,7 @@ body {
 	width: 45px;
 	height: 45px;
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-	background-color: #ffffff;
+	background-color: $colorTextHeroFooter;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -395,7 +395,7 @@ body {
 @keyframes circle-to-square {
 	100% {  
     border-radius: 0 0 0 0;
-    background:#eff9ff;
+    background: $colorBackground;
     transform:rotate(180deg);
 	}
 }
@@ -413,7 +413,7 @@ body {
 	justify-content: center;
 	align-content: center;
 	box-sizing: border-box;
-	background-color: #304268;
+	background-color: $colorFooter;
 	@media all and (min-width: 768px) {
 		padding: 0 39px;
 	}
@@ -436,7 +436,7 @@ body {
 	font-size: 16px;
 	line-height: 1.88;
 	text-align: center;
-	color: #ffffff;
+	color: $colorTextHeroFooter;
 	list-style: none;
 	text-transform: uppercase;
 	@media all and (min-width: 768px) {
@@ -448,7 +448,7 @@ body {
 	font-size: 16px;
 	line-height: 1.88;
 	text-align: center;
-	color: #ffffff;
+	color: $colorTextHeroFooter;
 	list-style: none;
 	text-transform: uppercase;
 	@media all and (min-width: 768px) {
@@ -457,13 +457,13 @@ body {
 }
 .footer__menu a {
 	text-decoration: none;
-	color: #ffffff;
+	color: $colorTextHeroFooter;
 }
 
 .footer__copyright {
 	@include subtitle-style();
 	text-align: center;
-	color: #ffffff;
+	color: $colorTextHeroFooter;
 	margin: 30px 0 0 0;
 	@media all and (min-width:768px) {
 		margin: 0;
@@ -472,11 +472,11 @@ body {
 .copyright__text {
 	@include subtitle-style();
 	text-align: center;
-	color: #ffffff;
+	color: $colorTextHeroFooter;
 	margin: 0 0 45px 0;
 }
 .heart {
-	color:#f26002;
+	color: $colorButton;
 }
 
 @media all and (min-width: 768px) {
