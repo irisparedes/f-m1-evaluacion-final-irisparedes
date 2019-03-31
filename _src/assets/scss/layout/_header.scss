@@ -1,0 +1,16 @@
+//header
+.header {
+	background-color: $colorHeader;
+	width: 44px;
+	height: 44px;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+}
+.hamburger__image {
+	width: 16px;
+	height: 14px;
+}

@@ -1,0 +1,74 @@
+//Hero
+.hero__image {
+	background-image: url(../images/cover.jpg) ;
+	min-height: 100vh;
+	width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+	background-size: cover;
+	color: $colorTextHeroFooter;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+}
+.hero__title {
+	text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+	font-family: RobotoSlab;
+	font-size: 42px;
+	font-weight: bold;
+	line-height: 1.31;
+	text-align: center;
+	color: $colorTextHeroFooter;
+	margin-bottom: 10px;
+	text-align: center;
+	text-transform: uppercase;
+	width: 290px;
+	@media all and (min-width: 768px) {
+		font-size: 80px;
+		line-height: 1.33;
+		margin-bottom: 20px;
+		width: 690px;
+	}
+	@media all and (min-width: 1200px) {
+		font-size: 100px;
+		line-height: 1.32;
+		margin-bottom: 0;
+		text-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+		width: 730px;
+    }
+}
+.hero__text {
+	font-family: Roboto;
+	font-size: 16px;
+	text-align: center;
+	margin-bottom: 45px;
+	color: $colorTextHeroFooter;
+	@media all and (min-width: 768px) {
+		font-size: 24px;
+		margin-bottom: 30px;
+	}
+	@media all and (min-width: 1200px) {
+		margin-top: 0;
+    }
+}
+//Hero button
+.hero__button {
+	width: 45px;
+	height: 45px;
+	border-radius: 22.5px;
+	background: $colorTextHeroFooter;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 53px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	@media all and (min-width:768px) {
+		margin-bottom: 45px;
+	}
+	@media all and (min-width: 1200px) {
+		margin-bottom: 13px;
+	}
+}

@@ -1,0 +1,70 @@
+//Main looking
+.looking__container {
+	padding: 0 15px;
+	@media all and (min-width: 768px){
+		padding: 0 39px;
+	}
+	@media all and (min-width: 1200px){
+		padding: 0 275px;
+	}
+}
+.looking {
+	font-family: Roboto;
+	color: $colorSubtitle;
+}
+.looking__subtitle {
+	@include subtitle-style();
+	color: $colorSubtitle;
+	margin-top: 30px;
+	@media all and (min-width: 1200px){
+		font-size: 14px;
+		margin: 60px 0 0 0;
+	}
+}
+.looking__title {
+	@include title-style();
+	margin: 0;
+	margin-top: 1px;
+	text-transform: capitalize;
+	@media all and (min-width: 768) {
+		font-size: 26px;
+		line-height: 1.73;
+	}
+	@media all and (min-width: 1200px) {
+		font-size: 32px;
+		margin: 0;
+	}
+}
+.looking__text {
+	@include text();
+	font-family: Roboto;
+	color: $colorText;
+	margin: 15px 0 30px 0;
+	@media all and (min-width: 768px) {
+		font-size: 20px;
+		margin: 30px 0 30px 0;
+	}
+}
+.looking__button {
+	width: 76px;
+	height: 45px;
+	border-radius: 22.5px;
+	border: solid 2px $colorButton;
+	margin-bottom: 45px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	cursor: pointer;
+	color: $colorButton;
+	text-decoration: none;
+	text-align: center;
+	font-family: Roboto;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 2.25;
+	transition: background-color linear .7s, box-shadow ease .7s;
+	&:hover {
+		background-color: $colorFooter;
+		box-shadow: 0px 5px 10px rgba(black, .5);
+    }	
+}
