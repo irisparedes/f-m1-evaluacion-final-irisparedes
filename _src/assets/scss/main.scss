@@ -399,7 +399,21 @@ body {
 	border-radius: 50%;
 	transform: translateY(-22px);
 	cursor: pointer;
+	&:hover {
+		background-color: #304268;
+  	animation: circle-to-square 2s 1s infinite alternate;  
+
+	}
 }
+@keyframes circle-to-square {
+	100% {  
+    border-radius: 0 0 0 0;
+    background:#eff9ff;
+    transform:rotate(180deg);
+	}
+}
+
+
 .footer__button a {
 	height: 24px;
 }
